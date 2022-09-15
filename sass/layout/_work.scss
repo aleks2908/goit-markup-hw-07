@@ -1,20 +1,17 @@
-.section.work {
+.section--no-top-padding {
     padding-top: 0;
 }
 
-.work.list {
+.work-list {
     display: flex;
+    column-gap: 30px;
 }
 
-.work.list li:not(:last-child) {
-    margin-right: 30px;
-}
-
-.work.list li {
+.work-list__card {
     position: relative;
 }
 
-.work.list p {
+.work-list__text {
     position: absolute;
     display: flex;
     justify-content: center;

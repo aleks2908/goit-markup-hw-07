@@ -3,7 +3,7 @@
     gap: 30px;
 }
 
-.clients-link {
+.clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@
     transition: fill var(--transition_data), border-color var(--transition_data);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
