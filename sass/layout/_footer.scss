@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-.logo--footer {
+.logo--bottom-margin {
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -33,12 +33,14 @@
 .adress-list__contacts {
     color: var(--footer-contacts-color);
     transition: color var(--transition_data);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
-.adress-list__contacts:hover,
-.adress-list__contacts:focus {
-    color: var(--accent-color);
-}
+
 
 
 
@@ -75,13 +77,15 @@
     fill: currentColor;
 
     transition: background-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primery-bg-color);
+    }
 }
 
-.social-media-list__link:hover,
-.social-media-list__link:focus {
-    background-color: var(--accent-color);
-    fill: var(--primery-bg-color);
-}
+
 
 
 
@@ -112,16 +116,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+    
+        &::placeholder {
+            color: var(--footer-contacts-color);
+        }
 }
 
-.subscribe-form__input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
 
-.subscribe-form__input::placeholder {
-    color: var(--footer-contacts-color);
-}
 
 .subscribe-form__button {
     display: flex;
@@ -143,6 +149,12 @@
     border-radius: 4px;
     border: none;
     transition: color var(--transition_data), background-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+
 }
 
 .subscribe-form__icon {
@@ -151,7 +163,3 @@
     transition: fill var(--transition_data);
 }
 
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
-    background-color: #188ce8;
-}

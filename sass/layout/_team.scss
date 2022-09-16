@@ -53,10 +53,11 @@
     fill: currentColor;
 
     transition: color var(--transition_data), background-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primery-bg-color);
+    }
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: var(--accent-color);
-    fill: var(--primery-bg-color);
-}

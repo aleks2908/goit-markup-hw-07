@@ -29,10 +29,11 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--transition_data), border-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-window__close-btn:hover,
-.modal-window__close-btn:focus {
-    fill: var(--accent-color);
-}
 

@@ -140,9 +140,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--transition_data), border-color var(--transition_data);
 }
-
-.modal-window__close-btn:hover,
-.modal-window__close-btn:focus {
+.modal-window__close-btn:hover, .modal-window__close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -180,7 +178,6 @@ body {
   padding: 0 42px;
   transition: border-color var(--transition_data);
 }
-
 .modal-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -194,7 +191,6 @@ body {
   fill: var(--primery-text-color);
   transition: fill var(--transition_data);
 }
-
 .modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
 }
@@ -211,11 +207,9 @@ body {
   overflow-y: auto;
   transition: border-color var(--transition_data);
 }
-
 .modal-form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form__textarea:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -241,22 +235,19 @@ body {
   margin-right: 7px;
   transition: background-color var(--transition_data);
 }
-
-.modal-form__own-checkbox-icon {
-  display: none;
-}
-
 .modal-form__checkbox:checked + .modal-form__checkbox-icon {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-
-.modal-form__checkbox:checked + .modal-form__checkbox-icon > .modal-form__own-checkbox-icon {
-  display: block;
-}
-
 .modal-form__checkbox:focus + .modal-form__checkbox-icon {
   box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
+}
+
+.modal-form__own-checkbox-icon {
+  display: none;
+}
+.modal-form__checkbox:checked + .modal-form__checkbox-icon > .modal-form__own-checkbox-icon {
+  display: block;
 }
 
 .modal-form__submit-btn {
@@ -278,9 +269,7 @@ body {
   border: none;
   transition: color var(--transition_data), background-color var(--transition_data);
 }
-
-.modal-form__submit-btn:hover,
-.modal-form__submit-btn:focus {
+.modal-form__submit-btn:hover, .modal-form__submit-btn:focus {
   background-color: #188ce8;
 }
 
@@ -322,9 +311,7 @@ body {
   padding-bottom: 32px;
   transition: color var(--transition_data);
 }
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -332,7 +319,6 @@ body {
   position: relative;
   color: var(--accent-color);
 }
-
 .site-nav__link--current::after {
   position: absolute;
   display: block;
@@ -360,9 +346,7 @@ body {
   letter-spacing: 0.02em;
   transition: color var(--transition_data);
 }
-
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+.auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -410,9 +394,7 @@ body {
   background-color: var(--accent-color);
   transition: background-color var(--transition_data);
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -526,9 +508,7 @@ body {
   fill: currentColor;
   transition: color var(--transition_data), background-color var(--transition_data);
 }
-
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primery-bg-color);
 }
@@ -550,9 +530,7 @@ body {
   fill: currentColor;
   transition: fill var(--transition_data), border-color var(--transition_data);
 }
-
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -568,7 +546,7 @@ body {
   justify-content: space-between;
 }
 
-.logo--footer {
+.logo--bottom-margin {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -593,9 +571,7 @@ body {
   color: var(--footer-contacts-color);
   transition: color var(--transition_data);
 }
-
-.adress-list__contacts:hover,
-.adress-list__contacts:focus {
+.adress-list__contacts:hover, .adress-list__contacts:focus {
   color: var(--accent-color);
 }
 
@@ -630,9 +606,7 @@ body {
   fill: currentColor;
   transition: background-color var(--transition_data);
 }
-
-.social-media-list__link:hover,
-.social-media-list__link:focus {
+.social-media-list__link:hover, .social-media-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primery-bg-color);
 }
@@ -663,12 +637,10 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
 .subscribe-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .subscribe-form__input::placeholder {
   color: var(--footer-contacts-color);
 }
@@ -692,16 +664,14 @@ body {
   border: none;
   transition: color var(--transition_data), background-color var(--transition_data);
 }
+.subscribe-form__button:hover, .subscribe-form__button:focus {
+  background-color: #188ce8;
+}
 
 .subscribe-form__icon {
   margin-left: auto;
   fill: var(--primery-bg-color);
   transition: fill var(--transition_data);
-}
-
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
-  background-color: #188ce8;
 }
 
 /* ===== ФІЛЬТР ===== */
@@ -722,17 +692,15 @@ body {
   border: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.project-list-filter__button:hover, .project-list-filter__button:focus {
+  color: var(--primery-bg-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .project-list-filter__button--active {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
-}
-
-.project-list-filter__button:hover,
-.project-list-filter__button:focus {
-  color: var(--primery-bg-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== project-list ===== */
@@ -750,9 +718,7 @@ body {
   display: block;
   transition: box-shadow var(--transition_data);
 }
-
-.project-list__link:hover,
-.project-list__link:focus {
+.project-list__link:hover, .project-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -795,8 +761,6 @@ body {
   overflow: auto;
   transition: transform var(--transition_data);
 }
-
-.project-list__link:hover .project-list__overlay-text,
-.project-list__link:focus .project-list__overlay-text {
+.project-list__link:hover .project-list__overlay-text, .project-list__link:focus .project-list__overlay-text {
   transform: translateY(-100%);
 }/*# sourceMappingURL=main.css.map */

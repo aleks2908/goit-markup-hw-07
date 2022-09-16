@@ -14,10 +14,12 @@
     color: var(--social-icon-fill);
     fill: currentColor;
     transition: fill var(--transition_data), border-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}

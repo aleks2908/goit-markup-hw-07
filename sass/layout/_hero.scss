@@ -39,9 +39,10 @@
     background-color: var(--accent-color);
 
     transition: background-color var(--transition_data);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: #188ce8;
-}
