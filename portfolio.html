@@ -25,28 +25,42 @@
     <!-- ========== ХЕДЕР =========== -->
     <header class="page-header">
       <div class="contaner page-header__contaner">
-        <nav class="main-navigation">
+        <nav class="menu">
           <a class="logo" href="./index.html">Web<span class="logo__name-header">Studio</span></a>
-          <ul class="site-nav">
-            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студія</a></li>
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="#">Портфоліо</a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Студія</a>
             </li>
-            <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакти</a></li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="#">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="auth-nav">
+        <ul class="contact-list">
           <li>
-            <a class="auth-nav__link" href="mailto:info@devstudio.com">
-              <svg class="auth-nav__icon" width="16" height="12">
+            <a class="contact-list__link" href="mailto:info@devstudio.com">
+              <svg
+                class="contact-list__icon"
+                aria-label="іконка електронної пошти"
+                width="16"
+                height="12"
+              >
                 <use href="./images/sprite.svg#email"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="auth-nav__link" href="tel:+380961111111">
-              <svg class="auth-nav__icon" width="10" height="16">
+            <a class="contact-list__link" href="tel:+380961111111">
+              <svg
+                class="contact-list__icon"
+                aria-label="іконка мобільного телефону"
+                width="10"
+                height="16"
+              >
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
 
@@ -56,32 +70,28 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!-- ========== ПОРТФОЛІО =========== -->
-      <section class="section">
+      <section class="section portfolio">
         <div class="contaner">
           <h1 class="visually-hidden">Портфоліо</h1>
 
-          <ul class="project-list-filter">
+          <ul class="filter">
             <li>
-              <button
-                class="project-list-filter__button project-list-filter__button--active"
-                type="button"
-              >
-                Усі
-              </button>
+              <button class="filter__button filter__button--active" type="button">Усі</button>
             </li>
             <li>
-              <button class="project-list-filter__button" type="button">Веб-сайти</button>
+              <button class="filter__button" type="button">Веб-сайти</button>
             </li>
             <li>
-              <button class="project-list-filter__button" type="button">Додатки</button>
+              <button class="filter__button" type="button">Додатки</button>
             </li>
             <li>
-              <button class="project-list-filter__button" type="button">Дизайн</button>
+              <button class="filter__button" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="project-list-filter__button" type="button">Маркетинг</button>
+              <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
 
@@ -273,7 +283,7 @@
     <!-- ========== ФУТЕР =========== -->
     <footer class="footer" id="contacts">
       <div class="contaner">
-        <div class="footer-blocks">
+        <div class="footer__parts">
           <div>
             <a class="logo logo--bottom-margin" href="./index.html"
               >Web<span class="logo__name-footer">Studio</span></a

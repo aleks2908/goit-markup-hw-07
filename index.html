@@ -25,23 +25,25 @@
     <!-- ========== ХЕДЕР =========== -->
     <header class="page-header">
       <div class="contaner page-header__contaner">
-        <nav class="main-navigation">
+        <nav class="menu">
           <a class="logo" href="#">Web<span class="logo__name-header">Studio</span></a>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="#">Студія</a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="#">Студія</a>
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакти</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="auth-nav">
+        <ul class="contact-list">
           <li>
-            <a class="auth-nav__link" href="mailto:info@devstudio.com">
+            <a class="contact-list__link" href="mailto:info@devstudio.com">
               <svg
-                class="auth-nav__icon"
+                class="contact-list__icon"
                 aria-label="іконка електронної пошти"
                 width="16"
                 height="12"
@@ -52,9 +54,9 @@
             >
           </li>
           <li>
-            <a class="auth-nav__link" href="tel:+380961111111">
+            <a class="contact-list__link" href="tel:+380961111111">
               <svg
-                class="auth-nav__icon"
+                class="contact-list__icon"
                 aria-label="іконка мобільного телефону"
                 width="10"
                 height="16"
@@ -68,6 +70,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!-- ========== ГЕРОЙ =========== -->
       <section class="hero">
@@ -78,7 +81,7 @@
       </section>
 
       <!-- ========== НАШІ ПЕРЕВАГИ =========== -->
-      <section class="section">
+      <section class="section features">
         <div class="contaner">
           <h2 class="section-title visually-hidden">Наші переваги</h2>
           <ul class="feature-list">
@@ -131,7 +134,7 @@
       </section>
 
       <!-- ========== ЧИМ МИ ЗАЙМАЄМОСЯ =========== -->
-      <section class="section section--no-top-padding">
+      <section class="section our-work">
         <div class="contaner">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
@@ -164,7 +167,7 @@
       </section>
 
       <!-- ========== НАША КОМАНДА =========== -->
-      <section class="section section--gray-bg">
+      <section class="section team">
         <div class="contaner">
           <h2 class="section-title">Наша команда</h2>
 
@@ -178,30 +181,30 @@
               />
               <h3 class="team-list__name">Ігор Дем'яненко</h3>
               <p class="team-list__profession">Product Designer</p>
-              <ul class="social-list">
+              <ul class="media-list">
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка інстаграму" width="20" height="20">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка твітеру" width="20" height="20">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка фейсбуку" width="20" height="20">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка лінкед-ін" width="20" height="20">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
@@ -218,30 +221,30 @@
               />
               <h3 class="team-list__name">Ольга Рєпіна</h3>
               <p class="team-list__profession">Frontend Developer</p>
-              <ul class="social-list">
+              <ul class="media-list">
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка інстаграму" width="20" height="20">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка твітеру" width="20" height="20">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка фейсбуку" width="20" height="20">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка лінкед-ін" width="20" height="20">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
@@ -258,30 +261,30 @@
               />
               <h3 class="team-list__name">Микола Тарасов</h3>
               <p class="team-list__profession">Marketing</p>
-              <ul class="social-list">
+              <ul class="media-list">
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка інстаграму" width="20" height="20">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка твітеру" width="20" height="20">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка фейсбуку" width="20" height="20">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка лінкед-ін" width="20" height="20">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
@@ -298,30 +301,30 @@
               />
               <h3 class="team-list__name">Михайло Єрмаков</h3>
               <p class="team-list__profession">UI Designer</p>
-              <ul class="social-list">
+              <ul class="media-list">
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка інстаграм" width="20" height="20">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка твітеру" width="20" height="20">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка фейсбуку" width="20" height="20">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#">
+                  <a class="media-list__link" href="#">
                     <svg aria-label="іконка лінкед-ін" width="20" height="20">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
@@ -334,7 +337,7 @@
       </section>
 
       <!-- ========== ПОСТІЙНІ КЛІЄНТИ =========== -->
-      <section class="section">
+      <section class="section clients">
         <div class="contaner">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -388,7 +391,7 @@
     <!-- ========== ФУТЕР =========== -->
     <footer class="footer" id="contacts">
       <div class="contaner">
-        <div class="footer-blocks">
+        <div class="footer__parts">
           <div>
             <a class="logo logo--bottom-margin" href="#"
               >Web<span class="logo__name-footer">Studio</span></a

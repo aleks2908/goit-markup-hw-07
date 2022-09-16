@@ -67,11 +67,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .contaner {
   width: 1200px;
   padding-left: 15px;
@@ -84,6 +79,11 @@ body {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
@@ -282,7 +282,7 @@ body {
   align-items: center;
 }
 
-.main-navigation {
+.menu {
   display: flex;
   align-items: center;
 }
@@ -291,17 +291,17 @@ body {
   color: var(--logo-text-black);
 }
 
-.site-nav {
+.menu__list {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
 
-.site-nav__item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav__link {
+.menu__link {
   display: block;
   color: var(--primery-text-color);
   font-weight: 500;
@@ -311,15 +311,15 @@ body {
   padding-bottom: 32px;
   transition: color var(--transition_data);
 }
-.site-nav__link:hover, .site-nav__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav__link--current {
+.menu__link--current {
   position: relative;
   color: var(--accent-color);
 }
-.site-nav__link--current::after {
+.menu__link--current::after {
   position: absolute;
   display: block;
   content: "";
@@ -331,13 +331,13 @@ body {
   border-radius: 2px;
 }
 
-.auth-nav {
+.contact-list {
   display: flex;
   margin-left: auto;
   column-gap: 50px;
 }
 
-.auth-nav__link {
+.contact-list__link {
   display: flex;
   align-items: center;
   color: var(--secondary-text-color);
@@ -346,12 +346,12 @@ body {
   letter-spacing: 0.02em;
   transition: color var(--transition_data);
 }
-.auth-nav__link:hover, .auth-nav__link:focus {
+.contact-list__link:hover, .contact-list__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.auth-nav__icon {
+.contact-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -382,6 +382,7 @@ body {
 }
 
 .hero__button {
+  cursor: pointer;
   min-width: 216px;
   font-weight: 700;
   font-size: 16px;
@@ -428,7 +429,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.section--no-top-padding {
+.our-work {
   padding-top: 0;
 }
 
@@ -455,7 +456,7 @@ body {
   color: var(--primery-bg-color);
 }
 
-.section--gray-bg {
+.team {
   background-color: var(--taam-bg-color);
 }
 
@@ -489,7 +490,7 @@ body {
   padding-bottom: 16px;
 }
 
-.social-list {
+.media-list {
   display: flex;
   margin: 0;
   gap: 10px;
@@ -497,7 +498,7 @@ body {
   justify-content: center;
 }
 
-.social-list__link {
+.media-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,7 +509,7 @@ body {
   fill: currentColor;
   transition: color var(--transition_data), background-color var(--transition_data);
 }
-.social-list__link:hover, .social-list__link:focus {
+.media-list__link:hover, .media-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primery-bg-color);
 }
@@ -540,7 +541,7 @@ body {
   padding: 60px 0;
 }
 
-.footer-blocks {
+.footer__parts {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -675,14 +676,15 @@ body {
 }
 
 /* ===== ФІЛЬТР ===== */
-.project-list-filter {
+.filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
   column-gap: 8px;
 }
 
-.project-list-filter__button {
+.filter__button {
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -692,13 +694,13 @@ body {
   border: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-list-filter__button:hover, .project-list-filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-list-filter__button--active {
+.filter__button--active {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
 }
